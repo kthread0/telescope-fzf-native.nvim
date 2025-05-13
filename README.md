@@ -173,7 +173,10 @@ strings with the pattern that is listed below:
 
 ## Credit
 
-All credit for the algorithm goes to junegunn and his work on **[fzf][fzf]**.
+1. All credit goes to the upstream **[nvim-telescope/telescope-fzf-native.nvim][telescope-fzf-native]** project
+
+2. All credit for the algorithm goes to junegunn and his work on **[fzf][fzf]**.
 This is merely a c fork distributed under MIT for telescope.
 
 [fzf]: https://github.com/junegunn/fzf
+[telescope-fzf-native.nvim]: https://github.com/nvim-telescope/telescope-fzf-native.nvim
