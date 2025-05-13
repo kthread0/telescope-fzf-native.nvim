@@ -42,19 +42,19 @@ This requires:
 #### vim-plug
 
 ```viml
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
+Plug 'vermillionpaws/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
 ```
 
 #### packer.nvim
 
 ```lua
-use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
+use { 'vermillionpaws/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
 ```
 
 #### lazy.nvim
 
 ```lua
-{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
+{ 'vermillionpaws/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
 ```
 
 ### Make (Linux, MacOS, Windows with MinGW)
@@ -64,19 +64,19 @@ This requires `gcc` or `clang` and `make`
 #### vim-plug
 
 ```viml
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'vermillionpaws/telescope-fzf-native.nvim', { 'do': 'make' }
 ```
 
 #### packer.nvim
 
 ```lua
-use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+use { 'vermillionpaws/telescope-fzf-native.nvim', run = 'make' }
 ```
 
 #### lazy.nvim
 
 ```lua
-{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }
+{ 'vermillionpaws/telescope-fzf-native.nvim', build = 'make' }
 ```
 
 ## Telescope Setup and Configuration
