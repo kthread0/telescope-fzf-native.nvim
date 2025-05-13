@@ -1,4 +1,4 @@
-CFLAGS += -Wall -fpic -std=gnu99
+CFLAGS += -march=native -Wall -fpic -std=gnu99
 
 ifeq ($(OS),Windows_NT)
     CC = gcc
