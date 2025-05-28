@@ -1,4 +1,4 @@
-CFLAGS += -march=native -Wall -fpic -std=gnu99
+CFLAGS += -march=native -Wall -fpic -flto -std=gnu99
 
 ifeq ($(OS),Windows_NT)
     CC = gcc
@@ -24,7 +24,7 @@ build/$(TARGET): src/fzf.c src/fzf.h
 	$(CC) -O3 $(CFLAGS) -shared src/fzf.c -o build/$(TARGET)
 
 build/test: build/$(TARGET) test/test.c
-	$(CC) -Og -ggdb3 $(CFLAGS) test/test.c -o build/test -I./src -L./build -lfzf -lexaminer
+	$(CC) -O3 -g -ggdb3 $(CFLAGS) test/test.c -o build/test -I./src -L./build -lfzf -lexaminer
 
 .PHONY:
 debug: src/fzf.c src/fzf.h
